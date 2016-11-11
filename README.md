@@ -7,6 +7,24 @@ REQUIREMENTS
 
 2) [getID3()](http://getid3.sourceforge.net/)
 
+
+
+### config
+Edit the file `config/web.php` and enable urlManager
+
+```php
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+			'hostInfo' => $params['backendUrl'],
+			'baseUrl' => $params['backendUrl'],
+            'rules' => [
+				// 'download/<id:\d+>' => 'podcast/download',
+				'download/<id:\d+>/<title>' => 'podcast/download',
+            ],
+        ]
+```
+
 update default feed
 /var/www/html/bzcast/yii podcast/update 
 
