@@ -1,6 +1,9 @@
 # bzcast
 Podcast Feed Generator Using Yii2 Framework
 
+Requirement
+http://getid3.sourceforge.net/
+
 # update default feed
 /var/www/html/bzcast/yii podcast/update 
 
