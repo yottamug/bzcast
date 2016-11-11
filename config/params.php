@@ -4,7 +4,7 @@ return [
 	'adminEmail'			=> 'admin@example.com',
 
 	'bzcast_baseurl'		=> 'http://example.com/bzcast/',
-	'bzcast_basedir'		=> __DIR__."/../";
+	'bzcast_basedir'		=> __DIR__."/../",
 	'bzcast_podcastdir'		=> '/media/audio/radio/',
 	'bzast_imagename'		=> 'podcast.jpg',
 	
