@@ -42,10 +42,7 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-			'hostInfo' => $params['backendUrl'],
-			'baseUrl' => $params['backendUrl'],
             'rules' => [
-				// 'download/<id:\d+>' => 'podcast/download',
 				'download/<id:\d+>/<title>' => 'podcast/download',
             ],
         ],
