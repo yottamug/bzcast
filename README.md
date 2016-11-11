@@ -22,11 +22,22 @@ Edit the file `config/web.php` and enable urlManager
         ],
 ```
 
-update default feed
-/var/www/html/bzcast/yii podcast/update 
+1. update default feed
 
-update database record
-/var/www/html/bzcast/yii podcast/updatedb 
+    ```
+    /var/www/html/bzcast/yii podcast/update
+    ```
 
-update category feed (only read from database)
-/var/www/html/bzcast/yii podcast/feed feedname_defined_in_db
+2. update database record
+
+    ```
+    /var/www/html/bzcast/yii podcast/updatedb
+    ```
+    
+3. update category feed (only read from database)
+
+    ```
+    /var/www/html/bzcast/yii podcast/feed feedname_defined_in_db
+    ```
+
+
