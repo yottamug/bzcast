@@ -17,16 +17,20 @@ class FeedXML extends Model
     public function generateFeed()
     {
 		// initialize object variables
-		$feed_base_downloadurl	= Yii::$app->params['feed_base_downloadurl'];
-		$feed_image_url			= Yii::$app->params['feed_image_url'];
-		$feed_base_url			= Yii::$app->params['feed_base_url'];
-		$feed_base_dir			= Yii::$app->params['feed_base_dir'];
+		$bzcast_baseurl 		= Yii::$app->params['bzcast_baseurl'];
+		$bzcast_basedir 		= Yii::$app->params['bzcast_basedir'];
+		
+		$feed_base_downloadurl	= $bzcast_baseurl.	"web/index.php/download/";
+		$feed_image_url			= $bzcast_baseurl.	Yii::$app->params['bzast_imagename'];
+		$feed_base_url			= $bzcast_baseurl.	"feed/";
+		$feed_base_dir			= $bzcast_basedir.	"feed/";
+		
 		$feed_author			= Yii::$app->params['feed_author'];
 		$feed_name				= Yii::$app->params['feed_name'];
 		$feed_email				= Yii::$app->params['feed_email'];
 		$feed_explicit			= Yii::$app->params['feed_explicit'];
 		
-		$feed_podcast_url		= Yii::$app->params['podcast_url'];
+		$feed_podcast_url		= Yii::$app->params['bzcast_baseurl'];
 		
 		// initialize variables
 		$xmlns_atom 		= "http://www.w3.org/2005/Atom";
