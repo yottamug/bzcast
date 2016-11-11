@@ -1,9 +1,4 @@
 <?php
-/**
- * @link http://www.yiiframework.com/
- * @copyright Copyright (c) 2008 Yii Software LLC
- * @license http://www.yiiframework.com/license/
- */
 
 namespace app\commands;
 
@@ -14,14 +9,6 @@ use app\models\BzId3;
 use app\models\Category;
 use app\models\FeedXML;
 
-/**
- * This command echoes the first argument that you have entered.
- *
- * This command is provided as an example for you to learn how to create console commands.
- *
- * @author Qiang Xue <qiang.xue@gmail.com>
- * @since 2.0
- */
 class PodcastController extends Controller
 {
 	
@@ -86,7 +73,7 @@ class PodcastController extends Controller
 	
 	public function actionUpdatedb()
 	{
-		$podcastdir = Yii::$app->params['podcastdir'];
+		$podcastdir = Yii::$app->params['bzcast_podcastdir'];
 		$files = \yii\helpers\FileHelper::findFiles($podcastdir,[
 			'only'		=> ['*.mp3'],
 			'except'	=> ['.@__thumb']					
